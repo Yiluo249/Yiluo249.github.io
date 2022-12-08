@@ -1,0 +1,60 @@
+.SwiperBox {
+    position: relative;
+    width: 308px;
+    height: 223px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 4px gray solid;
+    margin-bottom: 10px;
+}
+
+.imgBox {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 308px;
+    height: 223px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 图片默认样式 */
+.imgBox img {
+    flex-shrink: 0;
+    width: 308px;
+    height: 223px;
+}
+
+/* 下方指示器盒子 */
+.instBox {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    display: flex;
+    float: right;
+}
+
+/* 小圆点 */
+.inst {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin-right: 8px;
+    background: black;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+
+.inst:last-child {
+    margin-right: 0px;
+}
+
+.instActv {
+    border: 1px solid rgb(255, 102, 0);
+    background: rgb(255, 102, 0);
+}

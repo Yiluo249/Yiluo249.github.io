@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./t2_t00.css">
+    <style>
+        body{
+            background-color: #e1e1e1;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(43, 90, 177);
+        }
+        #t0{
+            background-color: white;
+            margin-left: 424px;
+            margin-right: 428px;
+        }
+        .t0img{
+            width: 1004px;
+            height: 136px;
+        }
+        #t0 ul{
+            width: 1004px;
+            height: 32px;
+            background: url(半月谈/top_daohang.gif);
+        }
+        #t0 ul li{
+            float: left;
+            list-style:none;
+            width: 87px;
+            text-align: center;
+            padding-top: 3px;
+            border-left: 1px black solid;
+        }
+        #t0 ul li a{
+            color: white;
+            text-decoration: none;
+            width: 91px;
+        }
+        #t0 ul li a:hover{
+            color: grey;
+        }
+        #t1{
+            background-color: gainsboro;
+            width: 1004px;
+        }
+        #div_daohang{
+            border: 2px rgb(71, 71, 71) solid;
+            width: 745px;
+            height: 28px;
+            float: left;
+            margin: 0;
+            background-color: gainsboro;
+        }
+        #div_daohang a img{
+            width: 95px;
+            height: 28px;
+        }
+        #div_daohang2 a img{
+            width: 60px;
+            height: 27px;
+        }
+        #a1{
+            width: 90px;
+            margin-left: 20px; 
+        }
+        #t2{
+            width: 1004px;
+            float: left;
+        }
+        #t2_t0{
+            width: 645px;
+            margin: 12px;
+            float: left;
+        }
+        #t2_t00{
+            float: left;
+            width: 310px;
+        }
+        #t00_img img{
+            border: 4px solid gray;
+            width: 308px;
+            height: 223px;
+        }
+
+
+        #t2_t1{
+            width: 641px;
+            height: 28px;
+            border: 1px gray solid;
+            margin-bottom: 12px;
+            padding-bottom: 7px;
+            padding-left: 4px;
+            background-color: #e1e1e1;
+        }
+        #tr_img1 img{
+            width: 20px;
+            height: 19px;
+        }
+        #tr_img2 img{
+            width: 30px;
+            height: 28px;
+        }
+        #tr_p{
+            font-size: 13px;
+        }
+        #tr_input{
+            margin-left: 40px;
+            width: 250px;
+            height: 23px;
+        }
+        #tr_button{
+            width: 33px;
+            height: 24px;
+        }
+
+        #t2_t2{
+            width: 645px;
+            height: 134px;
+            margin-bottom: 12px;
+            background-image: url(半月谈/11.jpg);
+            border: 1px grey solid;
+            border-radius: 6px;
+            border-top: 0ch;
+        }
+        #t2_img img{
+            width: 187px;
+            height: 133px;
+        }
+        #t2_neirong h2{
+            text-align: center;
+            color: rgb(43, 90, 177);
+            font-size: 22px;
+        }
+        #t2_neirong p{
+            font-family: 宋体;
+            font-size: 15px;
+        }
+
+        #t2_t3{
+            width: 645px;
+            height: 216px;
+            background-image: url(半月谈/12a.jpg);
+            border-right:1px solid gray;
+            border-bottom:1px solid gray;
+            border-radius: 8px;
+        }
+        #t2_t3_td1{
+            padding-left: 55px;
+        }
+        #t2_t3_td1 h5{
+            font-family: 宋体;
+            color:  rgb(35, 72, 141);
+            padding-top: 12px;
+        }
+        #t2_t3_td1 p{
+            font-family: 宋体;
+            font-size: 10px;
+            margin: 2px;
+            line-height: 15px;
+            letter-spacing: 0.4px;
+        }#t2_t3_td2{
+            padding-left: 55px;
+        }
+        #t2_t3_td2 h5{
+            font-family: 宋体;
+            color:  rgb(35, 72, 141);
+            padding-top: 19px;
+        }
+        #t2_t3_td2 p{
+            font-family: 宋体;
+            font-size: 10px;
+            margin: 2px;
+            line-height: 15px;
+            letter-spacing: 0.4px;
+        }
+        #t2_t3_td3{
+            padding-left: 55px;
+        }
+        #t2_t3_td3 h5{
+            font-family: 宋体;
+            color:  rgb(35, 72, 141);
+            padding-top: 12px;
+        }
+        #t2_t3_td3 p{
+            font-family: 宋体;
+            font-size: 10px;
+            margin: 2px;
+            line-height: 15px;
+            letter-spacing: 0.4px;
+        }
+
+        #t2_t4{
+            width: 316px;
+            height: 245px;
+            border: gray 1px solid;
+            margin-top:12px; 
+            margin-bottom: 12px;
+        }
+        #t2_t5{
+            width: 316px;
+            height: 152px;
+            border: 1px gray solid;
+            overflow: hidden;
+        }
+        #t3 img{
+            width: 975px;
+            margin-left: 12px;
+        }
+        #t4{
+            width: 984px;
+            margin-left: 12px;
+        }
+        #t4_t1{
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px gray solid;
+            border-radius: 6px;
+            width: 316px;
+            height: 196px;
+            float: left;
+        }
+        #t4_i1{
+            background-image: url(半月谈/57.jpg);
+            width: 316px;
+            height: 29px;
+        }
+        #t4_i1 div{
+            margin-left: 20px;
+            font-family: 宋体;
+            font-size: 15px;
+            font-weight: 900;
+        }
+        #t4_i1 div a div{
+            padding-top: 6px;
+            color: rgb(12, 82, 140);
+            float: left;
+            margin-right: 14px;
+        }
+        #t4_i1 div div{
+            float: left;
+        }
+        #t4_i1 div div a img{
+            margin-right: 90px;
+            margin-top: 6px;
+            width: 15px;
+            height: 15px;
+        }
+        #more{
+            margin-top: 4px;
+            float: left;
+            height: 13px;
+            font-size: 10px;
+            width: 20;
+        }
+        #more a{
+            color:black;
+            font-size: 12px;
+            font-family: weiruan;
+            font-size: 8px;
+            font-weight:500;
+        }
+        #t4_j1 img{
+            float: left;
+            margin-top: 8px;
+            margin-left: 14px;
+            width: 95px;
+            height: 72px;
+        }
+        #t4_j2{
+            width: 320px;
+            height: 87px;
+        }
+        #t4_j2 a h5{
+            margin-left: 4px;
+            margin-top: 8px;
+            font-size: 12px;
+            float: left;
+            font-family: 宋体;
+            color: black;
+            font-weight: 1000;
+        }
+        #t4_j2 a p{
+            margin-left: 4px;
+            margin-top: 8px;
+            font-size: 13px;
+            float: left;
+            font-family: 宋体;
+            color: black;
+            font-weight: 100;
+        }
+        #t4_j2 a h5:hover{
+            color: red;
+        }
+        #t4_j2 a p:hover{
+            color: red;
+        }
+        #t4_j3{
+            float: left;
+        }
+        #t4_j3 div img{
+            width: 3px;
+            height: 3px;
+        }
+        #t4_j3{
+            line-height: 23px;
+        }
+        #t4_j3 a{
+            font-size: 15px;
+            color: #000;
+            font-family: 宋体;
+        }
+        #t4_j3 a:hover{
+            color: red;
+        }
+        #t4_t2{
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px gray solid;
+            border-radius: 6px;
+            width: 316px;
+            height: 291px;
+            float: left;
+        }
+        #t4_t3{
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            width: 316px;
+            float: left;
+        }
+        hr{
+            border-top: dashed gray 0.1px;
+            size: 1px;
+        }
+        #t4_table1{
+            margin-top: 2px;
+            width: 316px;
+            border-bottom: 1px solid gray;
+            border-top: 1px solid gray;
+        }
+        #t4_table1_td{
+            border-left: 1px solid gray;
+        }
+        #t4_table1 tr td{
+            padding-left: 24px;
+        }
+        #t4_table1 tr td a{
+            color: gray;
+            font-size: 15px;
+        }
+        #t4_table1 tr td a:hover{
+            color: red;
+        }
+        #t4_t2_img img{
+            margin-top: 6px;
+            margin-left: 9px;
+            width: 300px; 
+            height: 219px;
+        }
+        #t4_t2_img1 a img{
+            width: 310px;
+            height: 165px;
+            margin-top: 7px;
+            margin-left: 3px;
+        }
+        #t4_t2_a1 a{
+            color: #000;
+            margin-left: 80px;
+            font-family: 宋体;
+        }
+        #t4_t2_a1 a:hover{
+            color: red;
+        }
+        #t4_t2_a2 a{
+            color: #000;
+            margin-left: 10px;
+            font-family: 宋体;
+        }
+        #t4_t2_a2 a:hover{
+            color: red;
+        }
+        #t4_t2_img2 img{
+            margin-left: 10px;
+            margin-top: 8px;
+            width: 98px;
+            height: 18px;
+        }
+        #t4_t3_img1{
+            float: left;
+        }
+        #t4_t3_img1 a img{
+            width: 158px;
+            height: 135px;
+        }
+        #t4_t3_img2{
+            float: left;
+        }
+        #t4_t3_img2 a img{
+            width: 158px;
+            height: 135px;
+        }
+        #t4_t3_img3{
+            font-size: 12px;
+            background-color: #000;
+            color: white;
+        }
+        #t4_t4{
+            margin-top: 6px;
+        }
+        #t4_t4 img{
+            width: 316px;
+            height: 65px;
+        }
+        #t4_t5_t1 img{
+            position: relative;
+            width: 316px;
+            height: 64px;
+        }
+        #t4_t5_t2 a{
+            position: absolute;
+            font-family: 宋体;
+            color: white;
+            left: 1140px;
+            top: 1440px;
+            font-weight: 1000;
+        }
+        #t4_t5_t2 a:hover{
+            color: red;
+        }
+        #t4_t5_t3 a{
+            font-size: 12px;
+            position: absolute;
+            color: black;
+            left: 1330px;
+            top: 1442px;
+        }
+        #t4_t5_t4 a{
+            font-size: 13px;
+            position: absolute;
+            font-family: 宋体;
+            color: black;
+            left: 1150px;
+            top: 1470px;
+            font-weight: 500;
+        }
+        #t4_t5_t4 a:hover{
+            color: red;
+        }
+        #t7{
+            margin-left: 424px;
+            margin-right: 428px;
+            background-color: white;
+            height: 40px;
+        }
+        #t5{
+            margin-left: 10px;
+            width: 960px;
+            border-top: gainsboro 1px solid;
+            margin-bottom: 10px;
+        }
+        #t5_td2{
+            padding-left: 8px;
+            height: 25px;
+        }
+        #t5 table{
+            float: left;
+        }
+        #t5 table tr td a{
+            padding: 3px;
+            color: black;
+        }
+        #t5 table tr td a:hover{
+            font-family: 宋体;
+            color: rgb(12, 82, 140);
+            background-color: #e1e1e1;
+            font-weight: 1000;
+        }
+        #t5_t1{
+            margin-top: 6px;
+            font-family: 黑体;
+            float: right;
+            margin-right: 8px;
+        }
+        #t6{
+            margin-left: 424px;
+            background-color: rgb(62, 64, 63);
+            width: 1002px;
+            border: 1px solid rgb(62, 64, 63);
+        }
+        #t6 table{
+            margin-left: 380px;
+        }
+        #t6_td a{
+            font-family: 宋体;
+            margin-right: 12px;
+            color: white;
+        }
+        #t6_td a:hover{
+            color: gainsboro;
+        }
+        #t8{
+            margin-left: 424px;
+            width: 1004px;
+            text-align: center;
+            background-color: rgb(84, 84, 84);
+            color: #e1e1e1;
+            font-family: 宋体;
+        }
+        #t10{
+            height: 23px;
+            width: 1004px;
+            background-color: rgb(203, 0, 3);
+            margin-left: 424px;
+        }
+        .text{
+            height: 22px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="t0">
+        <img src="半月谈/top_banner.jpg" class="t0img" alt="">
+        <ul>
+            <li><a href="#">半月谈首页</a></li>
+            <li><a href="#">今日谈</a></li>
+            <li><a href="#">热帖点击</a></li>
+            <li><a href="#"> 国事心事</a></li>
+            <li><a href="#">对话</a></li>
+            <li><a href="#">环球看点</a></li>
+            <li><a href="#">大编辑部</a></li>
+            <li><a href="#">考试园地</a></li>
+            <li><a href="#">品读人生</a></li>
+            <li><a href="#">舆情扫描</a></li>
+            <li><a href="#">成长话题</a></li>
+        </ul>
+        <div id="t1">
+            <div id="div_daohang">
+                <a href=""><img src="半月谈/47rich.jpg" alt=""></a>
+                <a href=""><img src="半月谈/48.jpg" alt=""></a>
+                <a href=""><img src="半月谈/50.jpg" alt=""></a>
+                <a href=""><img src="半月谈/53a.jpg" alt=""></a>
+                <a href=""><img src="半月谈/52.jpg" alt=""></a>
+                <a href=""><img src="半月谈/54.jpg" alt=""></a>
+                <a href=""><img src="半月谈/53.gif" alt=""></a>
+            </div>
+            <div id="div_daohang2">
+                <a href="#"><img src="半月谈/81.jpg" alt=""></a>
+                <a href="#"><img src="半月谈/82.jpg" alt=""></a>
+                <a href="#" id="a1"><img src="半月谈/tianqi.jpg" alt="" id="img_1"></a>
+            </div>
+        </div>
+        <div id="t2">
+            <div id="t2_t0">
+                <div id="t2_t1">
+                    <table>
+                        <tr>
+                            <td id="tr_img1"><img src="半月谈/56.jpg" alt=""></td>
+                            <td id="tr_img2"><img src="半月谈/ling.gif" alt=""></td>
+                            <td><p id="tr_p">和谐网介——时政通内测会员申请通道</p></td>
+                            <td><input type="text" id="tr_input"></td>
+                            <td><input type="button" value="搜索" id="tr_button"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="t2_t2">
+                    <table>
+                        <tr>
+                            <td id="t2_img"><img src="半月谈/20110425175447.jpg" alt=""></td>
+                            <td id="t2_neirong">
+                                <h2>前瞻农村征地制度改革</h2>
+                                <p>&nbsp;&nbsp;近年来，我国征地领域矛盾频发、冲突不断。国土资源部<br>表示,今年将推进征地安置补偿制度的改革试点，并完成《集<br>体土地征收征用条例》的起草。征地制度改革意义重大，牵涉<br>广泛，备受关注。改革的方向何在？</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="t2_t3">
+                    <table>
+                        <tr>
+                            <td id="t2_t3_td1">
+                                <h5>在没有公路的山村里当公务员</h5>
+                                <p>对于个人升迁问题,我相信我可以很坦然的面<br>对，因为我能站在这个位置上做我该做...</p>
+                            </td>
+                            <td id="t2_t3_td1">
+                                <h5>国培计划中“顶岗实习”的利与弊</h5>
+                                <p>时下教育公平是个热点话题。如何才能实现教育<br>公平呢？我们必须坚持一切为了孩子...</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t2_t3_td2">
+                                <h5>二十七次下调药价为啥看病还贵！</h5>
+                                <p>大家一直忽略了一个问题在药企和医院之间还有<br>一个特殊的经济利益人，他的名字叫...</p>
+                            </td>
+                            <td id="t2_t3_td2">
+                                <h5>饭局中的新的“三陪”艺术</h5>
+                                <p>中国人在两个地方放得开，一个是自己的卧室，<br>另外一个就是酒桌上...</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="t2_t3_td3">
+                                <h5>爷爷的故事</h5>
+                                <p>二爷爷在去年清明节前去世，时间恍惚过去已有<br>一年。这一年，村子还是那个村子...</p>
+                            </td>
+                            <td id="t2_t3_td3">
+                                <h5>一周时事风云录4月18日--</h5>
+                                <p>十一届全国人大常委会第二十次会议 醉酒吊销<br>驾照 个税起征点提高 煤炭法修改...</p>
+                            </td>
+                    </table>
+                </div>
+            </div>
+            <div id="t2_t00">
+                <div class="SwiperBox" onmouseenter="MouseFun('移入')" onmouseleave="MouseFun('移出')">
+                    <!-- 图片 -->
+                    <!-- :style="{left:`-${leftVal}px`,transition:`${ition}s`}" -->
+                    <div class="imgBox">
+                        <img src="./半月谈/news1.webp" alt="" srcset="">
+                        <img src="./半月谈/news2.webp" alt="" srcset="">
+                        <img src="./半月谈/news3.webp" alt="" srcset="">
+                        <img src="./半月谈/news4.webp" alt="" srcset="">
+                        <!-- 复制第一张放到最后,以实现无缝无线循环滚动效果 -->
+                        <img src="./半月谈/news1.webp" alt="" srcset="">
+                    </div>
+                    <!-- 下方指示点容器 -->
+                    <div class="instBox">
+                        <div onclick="instFun(0)" class="inst instBox0" id="">
+                            1
+                        </div>
+                        <div onclick="instFun(1)" id="" class="inst instBox1">
+                            2
+                        </div>
+                        <div onclick="instFun(2)" id="" class="inst instBox2">
+                            3
+                        </div>
+                        <div onclick="instFun(3)" id="" class="inst instBox3">
+                            4
+                        </div>
+
+                    </div>
+                </div>
+                <!-- 内容播放 -->
+                <div id="t2_t5">
+                    <div style="width: 100%;height: 40px;"><img src="" alt=""></div>
+                    <div class="box" style="width: 100%;height: 220px;overflow: hidden;">
+                        <div class="texts" style="width: 100%;height: 660px;position: relative;">
+                            <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">1</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">2</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">3</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">4</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">5</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">6</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">7</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">8</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">9</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">10</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">1</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">2</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">3</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">4</div></div>
+                        <div class="text"><div style="display: inline-block;"><img src="./半月谈/40.gif" alt="" style="top: -5px;display: inline-block;position: relative;margin-left: 10px;"></div><div style="display: inline-block;margin-left: 5px;">5</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="t3">
+            <a href="#"><img src="半月谈/ad1.jpg" alt=""></a>
+        </div>
+        <div id="t4">
+            <div id="t4_t1">
+                <div id="t4_i1">
+                    <div>
+                        <a href="#"><div>国事心</div></a>
+                        <div><a href="#"><img src="半月谈/div_xiaox.gif" alt=""></a></div>
+                        <div id="more"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div id="t4_j1">
+                        <img src="半月谈/20110425144601.jpg" alt="">
+                    </div>
+                    <div id="t4_j2">
+                        <a href="#"><h5>“减量不加价”尴尬了谁？</h5></a>
+                        <a href="#"><p>此次消费“隐形涨价”所带来的尴<br>尬，不仅是政府价格主管部门具体<br>价格管理方式--...</p></a>
+                    </div>
+                    <hr>
+                    <div id="t4_j3">
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">国务院抓食品安全“重典治乱”</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">卫星城能否纾解北京“大城市病”</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">局级干部学历史有何现实意义</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="t4_t1">
+                <div id="t4_i1">
+                    <div>
+                        <a href="#"><div>舆情扫</div></a>
+                        <div><a href="#"><img src="半月谈/div_xiaox.gif" alt=""></a></div>
+                        <div id="more"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div id="t4_j1">
+                        <img src="半月谈/20110425092141.jpg" alt="">
+                    </div>
+                    <div id="t4_j2">
+                        <a href="#"><h5>网友期待政务微博解决实际问题</h5></a>
+                        <a href="#"><p>目前中国已有2400余个政务微博，<br>“微博问政”已渐成政府信息公开<br>新趋势。</p></a>
+                    </div>
+                    <hr>
+                    <div id="t4_j3">
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">从陈光标到汪小菲看慈善争议</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">沿路拓宽“意见领袖”不该信口开河</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">别让投机者钻限价房空子</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="t4_t1">
+                <div id="t4_i1">
+                    <div>
+                        <a href="#"><div>大编辑</div></a>
+                        <div><a href="#"><img src="半月谈/div_xiaox.gif" alt=""></a></div>
+                        <div id="more"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div id="t4_j1">
+                        <img src="半月谈/20110425163903.jpg" alt="">
+                    </div>
+                    <div id="t4_j2">
+                        <a href="#"><h5>《半月谈》2011年第8期目录</h5></a>
+                        <a href="#"><p>加强和创新社会管理呼唤顶层设<br>计；梯度移民的民间路径；探寻中<br>国共产党的力量之源……</p></a>
+                    </div>
+                    <hr>
+                    <div id="t4_j3">
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">国务院抓食品安全“重典治乱”</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">卫星城能否纾解北京“大城市病”</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">局级干部学历史有何现实意义</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="t4_t1">
+                <div id="t4_i1">
+                    <div>
+                        <a href="#"><div>对话>></div></a>
+                        <div><a href="#"><img src="半月谈/div_xiaox.gif" alt=""></a></div>
+                        <div id="more"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div id="t4_j1">
+                        <img src="半月谈/20110425152839.jpg" alt="">
+                    </div>
+                    <div id="t4_j2">
+                        <a href="#"><h5>女交警开罚单治的是“媚官”恶俗</h5></a>
+                        <a href="#"><p>上岗不到半年，竟给县里几乎所有<br>违规的领导干部的车开了138张罚<br>单，就连公安局的车也未...</p></a>
+                    </div>
+                    <hr>
+                    <div id="t4_j3">
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">周文斌：大学有更大的担当</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">由8分钱菜价引起的悲剧</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">张雯：关注病残孤儿的专业社工</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="t4_t1">
+                <div id="t4_i1">
+                    <div>
+                        <a href="#"><div>环球看</div></a>
+                        <div><a href="#"><img src="半月谈/div_xiaox.gif" alt=""></a></div>
+                        <div id="more"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div id="t4_j1">
+                        <img src="半月谈/20110426171113.jpg" alt="">
+                    </div>
+                    <div id="t4_j2">
+                        <a href="#"><h5>美联储面临“大考”</h5></a>
+                        <a href="#"><p>鉴于第二轮定量宽松政策即将到<br>期，是否继续推行量化宽松政策，<br>美联储内部至今各执一词...</p></a>
+                    </div>
+                    <hr style="border: 1px dashed color=black;">
+                    <div id="t4_j3">
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">国务院抓食品安全“重典治乱”</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">卫星城能否纾解北京“大城市病”</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">局级干部学历史有何现实意义</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="t4_t1">
+                <div id="t4_i1">
+                    <div>
+                        <a href="#"><div>品读人</div></a>
+                        <div><a href="#"><img src="半月谈/div_xiaox.gif" alt=""></a></div>
+                        <div id="more"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                    </div>
+                </div>
+                <div>
+                    <div id="t4_j1">
+                        <img src="半月谈/20110426090641.jpg" alt="">
+                    </div>
+                    <div id="t4_j2">
+                        <a href="#"><h5>孩子，我只能给你这么多</h5></a>
+                        <a href="#"><p>我这一生，是无法给你留下一笔丰<br>厚的遗产了。我之所以坚持送小威<br>学习十八般武艺，其实...</p></a>
+                    </div>
+                    <hr>
+                    <div id="t4_j3">
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">惊悚片，不能仅仅是心跳</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">比起“呵呵”我宁愿听到“滚蛋”</a></div>
+                            <div>&nbsp;&nbsp;<img src="半月谈/40.gif" alt="">&nbsp;&nbsp;<a href="#">遇到朋友窘迫时……</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="t4_t2">
+                <div id="t4_i1">
+                    <div>
+                        <a href="#"><div>图片</div></a>
+                        <div><a href="#"><img src="半月谈/div_xiaox.gif" alt=""></a></div>
+                        <div id="more"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                    </div>
+                </div>
+                <table id="t4_table1">
+                    <tr>
+                        <td><a href="#">趣图</a></td>
+                        <td id="t4_table1_td"><a href="#">文体</a></td>
+                        <td id="t4_table1_td"><a href="#">科技</a></td>
+                        <td id="t4_table1_td"><a href="#">自然</a></td>
+                    </tr>
+                </table>
+                <div id="t4_t2_img">
+                    <img src="半月谈/20110402141025.jpg" alt="">
+                </div>
+            </div>
+            <div id="t4_t2">
+                <div id="t4_i1">
+                    <div>
+                        <a href="#"><div>成长话</div></a>
+                        <div><a href="#"><img src="半月谈/div_xiaox.gif" alt=""></a></div>
+                        <div id="more"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                    </div>
+                </div>
+                <div id="t4_t2_img1">
+                    <a href="#"><img src="半月谈/20110326090306.jpg" alt=""></a>
+                </div>
+                <div id="t4_t2_img2">
+                    <div id="t4_t2_a1"><a href="#">特色学校里的特色学生</a></div>
+                    <img src="半月谈/133.jpg" alt="">
+                    <div id="t4_t2_a2"><a href="#">彩色人才储备的兴盛之路</a></div>
+                </div>
+            </div>
+            <div id="t4_t3">
+                <div id="t4_t3_img1">
+                    <a href="#"><img src="半月谈/yxw.jpg" alt=""></a>
+                </div>
+                <div id="t4_t3_img2">
+                    <a href="#"><img src="半月谈/zxx.jpg" alt=""></a>
+                </div>
+                <div id="t4_t3_img3">
+                    李保民谈国有企业发展改革经验 谢志华谈社会管理如何创新
+                </div>
+            </div>
+            <div id="t4_t4">
+                <div id="t4_t4_img"><a href=""><img src="半月谈/ksyd_1013.jpg" alt=""></a></div>
+            </div>
+            <div id="t4_t5">
+                <div id="t4_t5_t1"><img src="半月谈/zxdc_1013.jpg" alt=""></div>
+                <div id="t4_t5_t2"><a href="#">在线调查 >></a></div>
+                <div id="t4_t5_t3"><a href="#">More&nbsp;&nbsp;&nbsp;&nbsp;✖</a></div>
+                <div id="t4_t5_t4"><a href="#">养老难之谁给你养老？</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="t7">
+        <div id="t5">
+            <table>
+                <tr>
+                    <td><a href="#">友情链接</a></td>
+                    <td id="t5_td2"><a href="#">新华网</a></td>
+                    <td id="t5_td2"><a href="#">中国信息产业网</a></td>
+                    <td id="t5_td2"><a href="#">中华网新闻</a></td>
+                    <td id="t5_td2"><a href="#">中国记协网</a></td>
+                    <td id="t5_td2"><a href="#">法制日报</a></td>
+                    <td id="t5_td2"><a href="#">人民网</a></td>
+                    <td id="t5_td2"><a href="#">联盟中国</a></td>
+                    <td id="t5_td2"><a href="#">荆楚网</a></td>
+                </tr>
+            </table>
+            <div id="t5_t1"><a href="#">>></a></div>
+        </div>
+    </div>
+    <div id="t6">
+        <table>
+            <tr>
+                <td id="t6_td"><a href="#">半月谈简介</a></td>
+                <td id="t6_td"><a href="#">联系我们</a></td>
+                <td id="t6_td"><a href="#">版权声明</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="t8">
+        <div>主办：半月谈杂志社 网站报备:京ICP备10206116号 编辑信箱:bianji@banyuetan.org</div>
+        <div>建议使用1024*768分辨率 浏览效果最佳 版权所有：半月谈杂志社 Ver:1.93.000——Beta</div>
+    </div>
+    <div id="t10"></div>
+<script src="./t2_t00.js"></script>
+</body>
+</html>
